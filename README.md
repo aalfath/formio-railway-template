@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/formio-1?utm_medium=integration&utm_source=button&utm_campaign=formio)
+
 # Form.io on Railway
 
 One-click Railway template for [Form.io Community Edition](https://github.com/formio/formio), the open-source form and API platform: build forms with a drag-and-drop builder, and every form becomes a REST API that stores its submissions in MongoDB.
@@ -6,7 +8,7 @@ One-click Railway template for [Form.io Community Edition](https://github.com/fo
 
 | Service | Source | Notes |
 |---|---|---|
-| `Form.io` | this repo (`Dockerfile`) | `formio/formio:4.11.1` pinned by digest, plus a small start script. Serves the admin portal and the API on Railway's `PORT`, health check `/health` |
+| `Form.io` | this repo (`Dockerfile`) | `formio/formio:4.11.1` pinned by digest, plus a small start script. Serves the admin portal and the API on Railway's `PORT`, health check `/` (the server listens only after MongoDB is connected) |
 | `MongoDB` | Railway's MongoDB | All forms, submissions, users and settings, on a volume |
 
 ## Variables
